@@ -1,0 +1,25 @@
+executable = /data/user/blaufuss/combo/V01-01-00/build/env-shell.sh
+
+# Where the log, out, err files will live
+basedir     = /data/user/blaufuss/alert_find_sim/logs/
+output      = $(basedir)$(Jobname).$(Cluster).out
+error       = $(basedir)$(Jobname).$(Cluster).err
+should_transfer_files = YES
+
+# Only 1 log file for all jobs
+log = /scratch/blaufuss/alert_find_sim/$(Jobname).log
+
+initialdir = /home/blaufuss
+
+# Other condor stuff
+notification   = never 
+getenv         = true
+universe       = vanilla
+
+request_cpus = 1
+request_memory = 4000MB
+
+# Submit !
+Arguments = $(command)
+queue
+
