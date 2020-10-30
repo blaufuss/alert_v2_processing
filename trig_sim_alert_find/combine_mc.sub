@@ -1,0 +1,213 @@
+# Unix submit description file
+# sleep.sub -- simple sleep job
+universe		= vanilla
+getenv			= True
+executable              = /data/user/blaufuss/combo/V01-01-00/build/env-shell.sh
+log                     = /scratch/blaufuss/tmp/Busy.log
+output                  = /scratch/blaufuss/tmp/Busy.$(Process).out
+error                   = /scratch/blaufuss/tmp/Busy.$(Process).error
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+request_cpus = 1
+request_memory = 2GB
+
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0000??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0001??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0002??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0003??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0004??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0005??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0006??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0007??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0008??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0009??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0010??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0011??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0012??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0013??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0014??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0015??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0016??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0017??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0018??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0019??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0020??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0021??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0022??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0023??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0024??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0025??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0026??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0027??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0028??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0029??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0030??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0031??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0032??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0033??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0034??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0035??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0036??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0037??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0038??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0039??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0040??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0041??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0042??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0043??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0044??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0045??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0046??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0047??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0048??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0049??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0050??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0051??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0052??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0053??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0054??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0055??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0056??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0057??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0058??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0059??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0060??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0061??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0062??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0063??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0064??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0065??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0066??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0067??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0068??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0069??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0070??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0071??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0072??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0073??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0074??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0075??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0076??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0077??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0078??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0079??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0080??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0081??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0082??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0083??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0084??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0085??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0086??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0087??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0088??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0089??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0090??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0091??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0092??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0093??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0094??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0095??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0096??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0097??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0098??.i3.zst
+queue
+arguments		= python /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/process_filtered_sim.py /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/npy/gfu_mc_test_$(Process).npy /data/ana/realtime/alert_catalog_v2/sim_20878_alerts/Alertv2_IC86.2016_NuMu.020878.0099??.i3.zst
+queue

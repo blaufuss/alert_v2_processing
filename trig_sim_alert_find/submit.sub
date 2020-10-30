@@ -1,7 +1,7 @@
 executable = /data/user/blaufuss/combo/V01-01-00/build/env-shell.sh
 
 # Where the log, out, err files will live
-basedir     = /data/user/blaufuss/alert_find_sim/logs/
+basedir     = /data/user/blaufuss/alert_v2_processing/trig_sim_alert_find/logs/
 output      = $(basedir)$(Jobname).$(Cluster).out
 error       = $(basedir)$(Jobname).$(Cluster).err
 should_transfer_files = YES
