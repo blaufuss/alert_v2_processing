@@ -38,14 +38,8 @@
 # time, number of jobs per interval, etc.
 ############################################################
 
-##################################################################
-#### recall my command line:
-#### python dumb_core.py --outfile <string> -nsteps <int>
-####                     --coeff <float> --sleep <float> --verbose
-##################################################################
-
-jobbase='alertv2_20_'
-script="/data/user/blaufuss/alert_find/find_alerts.py"
+jobbase='alertv2_20b_'
+script="/data/user/blaufuss/alert_v2_processing/level2_alert_find/find_alerts_2018.py"
 outdir="/data/user/blaufuss/historical_alerts/2020"
 counter=100
 ### seq <min> <stepsize> <max>
@@ -55,7 +49,7 @@ for infile in `ls -d /data/exp/IceCube/2020/filtered/level2/[0-1]*`; do
     command="python ${script} ${infile} ${outdir}"
     jobname=$jobbase$counter
     JOBID=$jobbase$counter
-    echo JOB $JOBID /data/user/blaufuss/alert_finder/submit.sub
+    echo JOB $JOBID /data/user/blaufuss/alert_v2_processing/level2_alert_find/submit.sub
     echo VARS $JOBID JOBNAME=\"$jobname\" command=\"$command\"
 done
 
